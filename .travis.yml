@@ -6,9 +6,7 @@ php:
 
 before_install:
   - sudo apt-get install -y --force-yes php5-ldap
-  - php -m
   - echo "extension = ldap.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-  - php -m
 
 install:
   - composer update
