@@ -12,3 +12,6 @@ before_install:
 
 install:
   - composer update
+
+script:
+  - phpunit --bootstrap ./vendor/autoload.php ./tests
