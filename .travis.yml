@@ -1,0 +1,11 @@
+language: php
+php:
+  - '5.3'
+  - '5.4'
+  - '5.5'
+  - '5.6'
+  - '7.0'
+
+install:
+  - sudo apt-get install -y --force-yes php5-cli # php5-mysql php5-cg1
+  - composer install
